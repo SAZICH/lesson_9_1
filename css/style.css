@@ -1,0 +1,113 @@
+@import "null.css";
+.header {
+    text-align: center;
+    font-size: 40px;
+    background-color: aquamarine;
+    box-shadow: inset 0px 0px 10px 0px black;
+}
+.start {
+    display: inline-block;
+    text-align: left;
+    font-size: 40px;
+    background-color: yellowgreen;
+    margin: 30px;
+}
+.block-1 {
+    background-color: yellowgreen;
+    margin: 30px 40px 0px 30px;
+    width: 40px;
+    height: 100px;
+}
+.block-2 {
+    background-color: blueviolet;
+    margin: 0px 30px 0px 30px;
+    width: 800px;
+    height: 40px;
+    visibility: hidden;
+}
+.block-3 {
+    background-color: brown;
+    margin: 0px 30px 0px 800px;
+    width: 30px;
+    height: 90px;
+    visibility: hidden;
+}
+.block-4 {
+    background-color: blue;
+    margin: 0px 0px 0px 330px;
+    width: 500px;
+    height: 30px;
+    visibility: hidden;
+}
+.block-5 {
+    background-color: yellow;
+    margin: 0px 0px 0px 330px;
+    width: 20px;
+    height: 120px;
+    visibility: hidden;
+}
+.block-6 {
+    background-color: fuchsia;
+    margin: 0px 0px 0px 30px;
+    width: 320px;
+    height: 30px;
+    visibility: hidden;
+}
+.block-7 {
+    background-color: khaki;
+    margin: 0px 0px 0px 30px;
+    width: 20px;
+    height: 100px;
+    visibility: hidden;
+}
+.block-8 {
+    background-color: rgb(60, 212, 250);
+    margin: 0px 0px 0px 30px;
+    width: 1300px;
+    height: 20px;
+    visibility: hidden;
+}
+.text {
+    display: block;
+    padding: 20px;
+    width: 200px;
+    height: 100px;
+    margin: 0px 0px 0px 1130px;
+    text-align: center;
+    font-size: 40px;
+    background-color: aquamarine;
+    box-shadow: inset 0px 0px 10px 0px black;
+    visibility: hidden;
+}
+.block-1:hover + .block-2,
+.block-2:hover {
+    visibility: visible;
+}
+.block-2:hover + .block-3,
+.block-3:hover {
+    visibility: visible;
+}
+.block-3:hover + .block-4,
+.block-4:hover {
+    visibility: visible;
+}
+.block-4:hover + .block-5,
+.block-5:hover {
+    visibility: visible;
+}
+.block-5:hover + .block-6,
+.block-6:hover {
+    visibility: visible;
+}
+.block-6:hover + .block-7,
+.block-7:hover {
+    visibility: visible;
+}
+.block-7:hover + .block-8,
+.block-8:hover {
+    visibility: visible;
+}
+.block-8:hover + .text,
+.text:hover {
+    visibility: visible;
+}
